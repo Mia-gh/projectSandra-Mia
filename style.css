@@ -7,7 +7,7 @@ list-style-type: none;
 
 body {
     background: #f8e7d8;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 nav {
@@ -73,7 +73,7 @@ li a {
     transition: opacity .4s;
     visibility: hidden;
     opacity: 0;
-
+ 
 }
 .overlay:target {
     visibility: visible;
@@ -88,17 +88,89 @@ li a {
     position: relative;
     transition: all 0.4s ease-in-out;
 }
-<<<<<<< HEAD
+
 .content {
     padding-top: 25rem;
     margin: 2rem 2rem 0 29rem;
     display: flex;
-=======
-.popup h2 {
+}
+.box .button {
+    width: 15%;
+    font-size: 1.3rem;
+    padding: 1rem;
     color: #73543e;
->>>>>>> 0b631fe192717ccca71bd0fc77758bc83bf1668f
+    border: 2px solid #f8e7d8;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    background: rgba(175, 81, 5, 0.25);
+    transition: all 0.3s ease-out;
+    position: relative;
+    margin: auto;
+
 }
 
+.button:hover {
+    background: #a17759;
+    color: #f8e7d8;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity .4s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 300rem auto;
+    padding: 60rem;
+    background: #fffdfa;
+    border-radius: 5px;
+    width: 20%;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+
+
+}
+
+.popup h4 {
+    color: #73543e;
+}
+
+.bear {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popup cross {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: #73543e;
+}
+
+.popup .cross:hover {
+    color: #f8e7d8;
+}
 .popup cross {
     position: absolute;
     top: 1rem;
@@ -129,47 +201,26 @@ li a {
       margin-left:100%;
       width:300%
     }
-}
+  
     to {
       margin-left:0%;
       width:100%;
     }
-    .content {
-        padding-top: 5rem;
-        margin: 2rem 2rem 0 29rem;
-
-  }
-  img {
-    height: 500px;
-    width: 350px;
-    border: 3px solid #a17759;
   }
 img {
     
-<<<<<<< HEAD
-  display: left;
-  align-items: stretch;  
-   margin: 4rem;
-   
-=======
-  float: right;  
->>>>>>> 0b631fe192717ccca71bd0fc77758bc83bf1668f
-    
-
-}
-.img3 {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
-
+  display: flex;
+  align-items: center;  
+   margin-left: 15px;
+   float: center;
+} 
 
 p {
     padding: 4rem;
-    margin-bottom: 2rem;
+    margin-left: 5px;
 }
 footer {
     font-size: large;
     background-color: #73543e;
+    float: center;
 }
